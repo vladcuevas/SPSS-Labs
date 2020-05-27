@@ -1,0 +1,28 @@
+* Encoding: UTF-8.
+* 09_01_LinearRegression.
+
+* Dataset: 09_01_LinearRegression.sav.
+
+* Predicting "Mortgage" (gc08).
+CORRELATIONS
+  /VARIABLES=gc08 gc01 gc02 gc03 gc04 gc05 gc06 gc07 gc09 gc10 gc11 gc12 Friendly Relaxed Temperamental
+  /PRINT=TWOTAIL NOSIG
+  /MISSING=PAIRWISE.
+
+GRAPH
+  /SCATTERPLOT(MATRIX)=gc08 gc01 gc02 gc03 gc04 gc05 gc06 gc07 gc09 gc10 gc11 gc12
+  /MISSING=LISTWISE.
+
+STATS REGRESS PLOT YVARS=gc08 XVARS=gc01 gc02 gc03 gc04 gc05 gc06 gc07 gc09 gc10 gc11 gc12 Friendly Relaxed Temperamental
+  /OPTIONS CATEGORICAL=BARS GROUP=1 BOXPLOTS INDENT=15 YSCALE=75 
+  /FITLINES LINEAR LOESS APPLYTO=TOTAL.
+
+REGRESSION
+  /MISSING LISTWISE
+  /STATISTICS COEFF OUTS R ANOVA
+  /CRITERIA=PIN(.05) POUT(.10)
+  /NOORIGIN 
+  /DEPENDENT gc08
+  /METHOD=ENTER gc01 gc02 gc03 gc04 gc05 gc06 gc07 gc09 gc10 gc11 gc12 Relaxed Temperamental
+  /RESIDUALS HISTOGRAM(ZRESID) NORMPROB(ZRESID).
+

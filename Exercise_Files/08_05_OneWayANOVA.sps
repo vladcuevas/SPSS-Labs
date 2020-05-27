@@ -1,0 +1,27 @@
+* Encoding: UTF-8.
+* 08_05_OneWayANOVA.
+
+* Dataset: 08_05_OneWayANOVA.sav.
+
+GRAPH
+  /HISTOGRAM(NORMAL)=jobsat.
+
+GRAPH
+  /BAR(SIMPLE)=COUNT BY ed.
+
+EXAMINE VARIABLES=jobsat BY ed
+  /PLOT=BOXPLOT
+  /STATISTICS=NONE
+  /NOTOTAL.
+
+GRAPH
+  /BAR(SIMPLE)=MEAN(jobsat) BY ed
+  /INTERVAL CI(95.0).
+
+* ANOVA with Tukey post-hoc, descriptives, and means plot.
+ONEWAY jobsat BY ed
+  /STATISTICS DESCRIPTIVES 
+  /PLOT MEANS
+  /MISSING ANALYSIS
+  /POSTHOC=TUKEY ALPHA(0.05).
+

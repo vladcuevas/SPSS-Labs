@@ -1,0 +1,30 @@
+﻿* Encoding: UTF-8.
+* 06_03_EDA.
+
+* Dataset: StateData.sav.
+
+* DEFAULT EXPLORATORY ANALYSIS.
+
+* Looking at gc06 (Privacy), which has outliers on both ends.
+EXAMINE VARIABLES=gc06
+  /PLOT BOXPLOT STEMLEAF
+  /COMPARE GROUPS
+  /STATISTICS DESCRIPTIVES
+  /CINTERVAL 95
+  /MISSING LISTWISE
+  /NOTOTAL.
+
+* ANALYSIS WITH OPTIONS.
+
+* Same analysis with options: additional measures of center, normality plots, 
+  identify extreme scores, histogram, and ID for outliers.
+EXAMINE VARIABLES=gc06
+  /ID=State
+  /PLOT BOXPLOT STEMLEAF HISTOGRAM NPPLOT
+  /COMPARE GROUPS
+  /MESTIMATORS HUBER(1.339) ANDREW(1.34) HAMPEL(1.7,3.4,8.5) TUKEY(4.685)
+  /PERCENTILES(5,10,25,50,75,90,95) HAVERAGE
+  /STATISTICS DESCRIPTIVES EXTREME
+  /CINTERVAL 95
+  /MISSING LISTWISE
+  /NOTOTAL.

@@ -1,0 +1,29 @@
+* Encoding: UTF-8.
+* 09_02_VariableSelection.
+
+* Dataset: 09_02_VariableSelection.sav.
+
+REGRESSION
+  /MISSING LISTWISE
+  /STATISTICS COEFF OUTS R ANOVA CHANGE
+  /CRITERIA=PIN(.05) POUT(.10)
+  /NOORIGIN 
+  /DEPENDENT gc08
+  /METHOD=STEPWISE gc01 gc02 gc03 gc04 gc05 gc06 gc07 gc09 gc10 gc11 gc12 Relaxed Temperamental
+  /RESIDUALS HISTOGRAM(ZRESID) NORMPROB(ZRESID).
+
+REGRESSION 
+  /MISSING LISTWISE 
+  /STATISTICS COEFF OUTS R ANOVA CHANGE 
+  /CRITERIA=PIN(.05) POUT(.10) 
+  /NOORIGIN 
+  /DEPENDENT gc08 
+  /METHOD=ENTER Relaxed Temperamental 
+  /METHOD=ENTER gc01 gc02 gc03 
+  /METHOD=ENTER gc04 gc05 gc06 
+  /METHOD=ENTER gc07 gc09 gc10 gc11 gc12 
+  /RESIDUALS HISTOGRAM(ZRESID) NORMPROB(ZRESID).
+
+* LASSO, Ridge, and Elastic Net are also available through CATREG.
+
+
