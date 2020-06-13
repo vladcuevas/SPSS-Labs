@@ -1,20 +1,34 @@
 # SPSS-Labs
 
-This is a repository to keep track Machine Learning and AI trainings with SPSS.
+This is a repository to keep track Machine Learning and AI trainings with [SPSS](https://www.ibm.com/analytics/spss-statistics-software).
 
-## Annotations 
+## Annotations
 
-Dependent will always go into the Y access
+### Dependent variable
+
+A dependent variable represents a quantity whose value depends on how the independent variable is manipulated.
+y is often the variable used to represent the dependent variable in an equation.
+
+- Dependent variable will always go into the Y axis.
+
+### Independent variable
+
+An independent variable is a variable that represents a quantity that is being manipulated in an experiment.
+x is often the variable used to represent the independent variable in an equation.
+
+### [Scatter Plots](https://en.wikipedia.org/wiki/Scatter_plot)
 
 Scatter Plot with very week relationship will be accumulated in near to a single point.
 
 Data points can have undue influence.
 
-Scatter Plot Matrix.
+#### Scatter Plot Matrix
 
-The relationship for X and Y is Z.
+A scatter plot matrix is a grid (or matrix) of scatter plots used to visualize bivariate relationships between combinations of variables. Each scatter plot in the matrix visualizes the relationship between a pair of variables, allowing many relationships to be explored in one chart.
 
-Mean vs Median, if data is normally distributed the mean and the median will be quite close.
+Mean vs Median
+
+- If data is normally distributed the mean and the median will be quite close.
 
 - If Mean is larger than the mean, then it means that there there is a positive skew.
-	- Skewness will be bigger than 1.
+  - Skewness will be bigger than 1.
