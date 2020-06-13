@@ -2,6 +2,13 @@
 
 This is a repository to keep track Machine Learning and AI trainings with [SPSS](https://www.ibm.com/analytics/spss-statistics-software).
 
+## SPSS Trial
+
+SPSS trial can be downloaded from this [link](https://www.ibm.com/account/reg/us-en/signup?formid=urx-19774).
+
+- No credit card is required, just create the account
+- 14-day trial period begins immediately after registration
+
 ## Annotations
 
 ### Dependent variable
@@ -9,7 +16,7 @@ This is a repository to keep track Machine Learning and AI trainings with [SPSS]
 A dependent variable represents a quantity whose value depends on how the independent variable is manipulated.
 y is often the variable used to represent the dependent variable in an equation.
 
-- Dependent variable will always go into the Y axis.
+- Dependent variable will always go into the Y axis
 
 ### Independent variable
 
@@ -28,7 +35,7 @@ A scatter plot matrix is a grid (or matrix) of scatter plots used to visualize b
 
 Mean vs Median
 
-- If data is normally distributed the mean and the median will be quite close.
+- If data is normally distributed the mean and the median will be quite close
 
-- If Mean is larger than the mean, then it means that there there is a positive skew.
-  - Skewness will be bigger than 1.
+- If Mean is larger than the mean, then it means that there there is a positive skew
+  - Skewness will be bigger than 1
