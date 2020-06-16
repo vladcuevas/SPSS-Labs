@@ -19,7 +19,7 @@ The complete training can be found in this [link](https://www.linkedin.com/learn
 
 Statistical significance is the *likelihood that a relationship between two or more variables is caused by something other than chance*. Statistical hypothesis testing is used to determine whether the result of a data set is statistically significant.
 
-It is represented by *Sig* or called *p-value*.****
+It is represented by *Sig* or called *p-value*.
 
 ### Observation
 
