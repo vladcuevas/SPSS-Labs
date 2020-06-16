@@ -128,3 +128,10 @@ variables  | Choose variables AND the 'order' of the variables      | Choose var
 | Extras that are always a good idea | Residual Plot, Partial Plots, Collinearity Diagnostics | Residual Plot, Partial Plots, Collinearity Diagnostics                      | Residual Plot, Partial Plots, Collinearity Diagnostics                      |
 
 Some definitions of Partial Correlationship can be found in the IBM knowledge center in this [link](https://www.ibm.com/support/knowledgecenter/es/SSLVMB_24.0.0/spss/base/idh_part.html)
+
+### Stepwise
+
+[Galit Shmueli - To Explain or To Predict?](https://www.galitshmueli.com/content/explain-or-predict)
+
+- [Video](https://www.youtube.com/watch?time_continue=2018&v=vWH_HNfQVRI&feature=emb_logo)
+- [Paper](https://www.galitshmueli.com/system/files/Stat%20Science%20published.pdf)
